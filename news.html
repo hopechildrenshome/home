@@ -29,12 +29,6 @@
       text-decoration: underline;
       color: #f39c12;
     }
-        .hero {
-      background: url('images/news-hero.jpg') center center/cover no-repeat;
-      color: white;
-      padding: 100px 0;
-      text-align: center;
-    }
     .section-title {
       font-weight: bold;
       margin-bottom: 20px;
@@ -52,8 +46,9 @@
     }
     .news-img {
       width: 100%;
-      height: 250px;
+      height: 100%;
       object-fit: cover;
+      border-radius: 12px;
     }
     .news-content {
       padding: 20px;
@@ -74,6 +69,7 @@
 <header>
   <img src="Banner_He will cover.png" alt="Psalm 91:4 Banner" />
 </header>
+
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-center py-2">
   <a href="index.html">Home</a>
   <a href="about.html">About Us</a>
@@ -85,84 +81,89 @@
   <a href="contact.html">Contact</a>
 </nav>
 
-  <div class="container activity-section">
-    <div class="mb-5 text-center">
-      <h2 class="section-title">News & Highlights</h2>
-      <p class="lead">Celebrating Milestones, Memories, and Meaningful Moments</p>
-    </div>
+<div class="container news-section">
+  <div class="mb-5 text-center">
+    <h2 class="section-title">News & Highlights</h2>
+    <p class="lead">Celebrating Milestones, Memories, and Meaningful Moments</p>
+  </div>
 
-<!-- News Section -->
-  <div class="container news-section">
-<!--    
-    <div class="news-card">
-      <img src="student-leaders.jpeg" alt="Emerging Student Leaders" class="news-img">
-      <div class="news-content">
+  <!-- 1st News Card -->
+  <div class="news-card p-3">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <img src="images/student-leaders.jpeg" alt="Emerging Student Leaders" class="news-img">
+      </div>
+      <div class="col-md-6 news-content">
         <div class="news-title">🌟 Emerging Student Leaders</div>
         <p class="news-text">
-          We are proud to share that several of our children studying at Dehradun Public School have been selected for student leadership roles, including class monitors and school council representatives. Their commitment, discipline, and positive influence have earned them the trust of their teachers and peers. We believe these early leadership experiences will lay a strong foundation for future impact in their communities.
+          We are proud to share that several of our children studying at Dehradun Public School have been selected for student leadership roles, including class monitors and school council representatives. Their commitment, discipline, and positive influence have earned them the trust of their teachers and peers.
+          We believe these early leadership experiences will lay a strong foundation for future impact in their communities.
         </p>
       </div>
     </div>
--->
-    <div class="container my-4">
-  <div class="row align-items-center bg-white shadow rounded p-3">
-    <!-- Image column -->
-    <div class="col-md-6 mb-3 mb-md-0">
-      <img src="images/student-leaders.jpeg" alt="Emerging Student Leaders" class="img-fluid rounded">
-    </div>
-
-    <!-- Content column -->
-    <div class="col-md-6">
-      <h4 class="text-primary mb-3">🌟 Emerging Student Leaders</h4>
-      <p>
-        We are proud to share that several of our children studying at Dehradun Public School have been selected for student leadership roles, including class monitors and school council representatives. Their commitment, discipline, and positive influence have earned them the trust of their teachers and peers.
-        We believe these early leadership experiences will lay a strong foundation for future impact in their communities.
-      </p>
-    </div>
   </div>
-</div>
 
-    <div class="news-card">
-      <img src="nursing-graduates.jpeg" alt="Nursing Graduaetes from Herbertpur" class="news-img">
-      <div class="news-content">
+  <!-- 2nd News Card -->
+  <div class="news-card p-3">
+    <div class="row align-items-center flex-md-row-reverse">
+      <div class="col-md-6">
+        <img src="nursing-graduates.jpeg" alt="Nursing Graduates" class="news-img">
+      </div>
+      <div class="col-md-6 news-content">
         <div class="news-title">🎓 Nursing Graduates from Herbertpur</div>
         <p class="news-text">
           It was a proud and emotional moment as a few of our young women graduated from Herbetpur Christian Hospital’s Nursing School, stepping into the next chapter of their lives as trained healthcare professionals. Their dedication and perseverance through the rigorous training is a testimony to the strength and hope nurtured within our home.
         </p>
       </div>
     </div>
+  </div>
 
-    <div class="news-card">
-      <img src="fathers-day.jpeg" alt="Father’s Day Celebration" class="news-img">
-      <div class="news-content">
+  <!-- 3rd News Card -->
+  <div class="news-card p-3">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <img src="fathers-day.jpeg" alt="Father’s Day Celebration" class="news-img">
+      </div>
+      <div class="col-md-6 news-content">
         <div class="news-title">👨‍👧 Father’s Day Celebration</div>
         <p class="news-text">
           Our children celebrated Father’s Day with great joy, preparing hand-made cards and heartfelt performances to honor the father figures in their lives. The day was filled with laughter, appreciation, and emotional moments, reminding us that love and care can be beautifully expressed across all relationships.
         </p>
       </div>
     </div>
+  </div>
 
-    <div class="news-card">
-      <img src="director-birthday.jpeg" alt="Director’s Birthday" class="news-img">
-      <div class="news-content">
+  <!-- 4th News Card -->
+  <div class="news-card p-3">
+    <div class="row align-items-center flex-md-row-reverse">
+      <div class="col-md-6">
+        <img src="director-birthday.jpeg" alt="Director’s Birthday" class="news-img">
+      </div>
+      <div class="col-md-6 news-content">
         <div class="news-title">🎂 Director’s Birthday – A Day of Gratitude</div>
         <p class="news-text">
           The home came alive with celebration on the birthday of our beloved Director, Brother John. The children presented skits, songs, and prayers, expressing their deep gratitude for his tireless efforts, kindness, and unwavering commitment. The day served not only as a celebration but also as an affirmation of the loving family we have become under his guidance.
         </p>
       </div>
     </div>
+  </div>
 
-    <div class="news-card">
-      <img src="alumni-meet.jpeg" alt="Alumni Meet" class="news-img">
-      <div class="news-content">
+  <!-- 5th News Card -->
+  <div class="news-card p-3">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <img src="alumni-meet.jpeg" alt="Alumni Meet" class="news-img">
+      </div>
+      <div class="col-md-6 news-content">
         <div class="news-title">🤝 Alumni Meet – A Full Circle of Hope</div>
         <p class="news-text">
           We were delighted to welcome back our former residents for a special Alumni Meet at the home. It was a day of reunion, inspiration, and reflection as our alumni — now working professionals, caregivers, and responsible adults—shared their stories with the younger children. Their presence reminded us of the journey of transformation that continues with every child who walks through our doors.
         </p>
       </div>
     </div>
-
   </div>
+</div>
+
 <footer>
   <p>&copy; 2025 Hope for Children Society. All rights reserved.</p>
 </footer>
