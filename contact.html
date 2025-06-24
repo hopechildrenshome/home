@@ -11,7 +11,7 @@
     }
     header img {
       width: 100%;
-      height: auto;
+      height: 20%;
     }
     footer {
       background-color: #2c3e50;
@@ -29,6 +29,32 @@
       text-decoration: underline;
       color: #f39c12;
     }
+        .section-title {
+      font-weight: bold;
+      margin-bottom: 20px;
+      color: #0d6efd;
+    }
+    .contact-section {
+      padding: 60px 20px;
+    }
+    .contact-card {
+      background: white;
+      padding: 30px;
+      border-left: 5px solid #0d6efd;
+      box-shadow: 0 0 15px rgba(0,0,0,0.05);
+    }
+
+    .icon {
+      font-size: 1.5rem;
+      margin-right: 8px;
+      color: #0d6efd;
+    }
+        .hero {
+      background: url('images/contact-hero.jpg') center center/cover no-repeat;
+      color: white;
+      padding: 100px 0;
+      text-align: center;
+    }
   </style>
 </head>
 <body>
@@ -45,9 +71,44 @@
   <a href="news.html">News</a>
   <a href="contact.html">Contact</a>
 </nav>
-<div class="container mt-4">
-<h2>Contact Us</h2><p>Email: <a href='mailto:prathyasabalbhawan@gmail.com'>prathyasabalbhawan@gmail.com</a></p>
-</div>
+<!-- Hero -->
+  <div class="hero">
+    <div class="container">
+      <h1 class="display-5">Contact Us</h1>
+      <p class="lead">"We would love to hear from you!"</p>
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <div class="container contact-section">
+    <div class="mb-5 text-center">
+      <h2 class="section-title">Let's Connect</h2>
+      <p class="lead">Whether you are looking to visit, volunteer, support our mission, or simply learn more about our work, we welcome you to reach out to us.</p>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="contact-card">
+          <h5 class="mb-3">📍 <strong>Address</strong></h5>
+          <p>
+            Prathyasa Bal Bhawan<br/>
+            9XFJ+GW3, Majhaun, Dehradun<br/>
+            Uttarakhand – 248007<br/>
+            <em>(Located in the scenic hillside of Majhaun, just a short drive from Dehradun city)</em>
+          </p>
+
+          <h5 class="mt-4 mb-3">👤 <strong>Director</strong></h5>
+          <p>Mr. John Varghese</p>
+          <p>📧 <strong>Email:</strong> <a href="mailto:johnkannoth67@yahoo.in">johnkannoth67@yahoo.in</a></p>
+
+          <div class="mt-4">
+            <p>Feel free to connect with us for visits, donations, collaborations, or volunteering opportunities.</p>
+            <p><strong>Together, we can bring hope and a future to every child.</strong></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 <footer>
   <p>&copy; 2025 Hope for Children Society. All rights reserved.</p>
 </footer>
