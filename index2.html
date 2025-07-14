@@ -4,15 +4,69 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Hope for Children Society</title>
+
+  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
   <style>
     body {
       font-family: 'Roboto', sans-serif;
+      background: #f8f9fa;
     }
+
     header img {
       width: 100%;
       height: auto;
     }
+
+    .sidebar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 240px;
+      height: 100vh;
+      background-color: #0d6efd; /* Bootstrap primary blue */
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      padding-top: 20px;
+    }
+
+    .sidebar .brand {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .sidebar .brand img {
+      width: 80%;
+      height: auto;
+    }
+
+    .sidebar a {
+      color: #fff;
+      display: flex;
+      align-items: center;
+      padding: 12px 20px;
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+
+    .sidebar a:hover {
+      background-color: #f39c12;
+      color: #fff;
+    }
+
+    .sidebar a i {
+      margin-right: 10px;
+    }
+
+    .content {
+      margin-left: 260px; /* Sidebar width + some gap */
+      padding: 40px 20px;
+    }
+
     footer {
       background-color: #2c3e50;
       color: #fff;
@@ -20,27 +74,7 @@
       padding: 1rem;
       margin-top: 2rem;
     }
-    .sidebar {
-      height: 100vh;
-      background-color: #343a40;
-      padding-top: 20px;
-      position: fixed;
-      width: 220px;
-    }
-    .sidebar a {
-      color: #fff;
-      display: block;
-      padding: 10px 20px;
-      text-decoration: none;
-    }
-    .sidebar a:hover {
-      background-color: #495057;
-      color: #f39c12;
-    }
-    .content {
-      margin-left: 240px; /* Width of sidebar + some spacing */
-      padding: 20px;
-    }
+
     .section-title {
       font-weight: bold;
       margin-bottom: 20px;
@@ -48,20 +82,21 @@
     }
   </style>
 </head>
+
 <body>
-  <header>
-    <img src="Banner_He will cover.png" alt="Psalm 91:4 Banner" />
-  </header>
 
   <nav class="sidebar">
-    <a href="index.html">Home</a>
-    <a href="about.html">About Us</a>
-    <a href="mission.html">Our Mission</a>
-    <a href="facility.html">Facilities</a>
-    <a href="gallery.html">Gallery</a>
-    <a href="activity.html">Activities</a>
-    <a href="news.html">News</a>
-    <a href="contact.html">Contact</a>
+    <div class="brand">
+      <img src="Banner_He will cover.png" alt="Hope for Children Banner">
+    </div>
+    <a href="index.html"><i class="bi bi-house-door"></i> Home</a>
+    <a href="about.html"><i class="bi bi-info-circle"></i> About Us</a>
+    <a href="mission.html"><i class="bi bi-bullseye"></i> Our Mission</a>
+    <a href="facility.html"><i class="bi bi-building"></i> Facilities</a>
+    <a href="gallery.html"><i class="bi bi-image"></i> Gallery</a>
+    <a href="activity.html"><i class="bi bi-activity"></i> Activities</a>
+    <a href="news.html"><i class="bi bi-newspaper"></i> News</a>
+    <a href="contact.html"><i class="bi bi-envelope"></i> Contact</a>
   </nav>
 
   <main class="content">
@@ -70,20 +105,20 @@
         <h2 class="section-title">Welcome to Prathyasa Bal Bhawan</h2>
         <p class="lead">"A home where hope finds a future"</p>
       </div>
+
+      <section class="my-5">
+        <p>Located in the serene hills of <strong>Poundha village, Dehradun</strong>, Prathyasha Bal Bhawan is a vibrant children’s home run by the <strong>Hope for Children Society</strong>, dedicated to nurturing orphaned and vulnerable children with love, education, and dignity.</p>
+        <p>More than shelter, we offer a <strong>life</strong>—filled with learning, laughter, care, and growth. From academic support and spiritual grounding to animal care, life skills, and leadership, our children thrive in a setting that truly feels like <strong>family</strong>.</p>
+      </section>
+
+      <p class="text-center"><strong>Join us in building lives that matter.</strong></p>
+      <h5 class="text-primary text-center"><strong>Pray * Support * Volunteer * Transform</strong></h5>
+      <p class="text-center"><strong>Because every child deserves more than survival — they deserve a future.</strong></p>
+
+      <footer>
+        <p>&copy; 2025 Hope for Children Society. All rights reserved.</p>
+      </footer>
     </div>
-
-    <section class="container my-5">
-      <p>Located in the serene hills of <strong>Poundha village, Dehradun</strong>, Prathyasha Bal Bhawan is a vibrant children’s home run by the <strong>Hope for Children Society</strong>, dedicated to nurturing orphaned and vulnerable children with love, education, and dignity.</p>
-      <p>More than shelter, we offer a <strong>life</strong>—filled with learning, laughter, care, and growth. From academic support and spiritual grounding to animal care, life skills, and leadership, our children thrive in a setting that truly feels like <strong>family</strong>.</p>
-    </section>
-
-    <p style="text-align: center;"><strong>Join us in building lives that matter.</strong></p>
-    <h5 class="text-primary text-center"><strong>Pray * Support * Volunteer * Transform</strong></h5>
-    <p style="text-align: center;"><strong>Because every child deserves more than survival - they deserve a future.</strong></p>
-
-    <footer>
-      <p>&copy; 2025 Hope for Children Society. All rights reserved.</p>
-    </footer>
   </main>
 
 </body>
