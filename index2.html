@@ -35,15 +35,18 @@
     }
 
     .sidebar .brand {
-      text-align: center;
-      margin-bottom: 2rem;
-    }
+  text-align: center;
+  margin: 0;  /* remove extra margin */
+  padding: 10px; /* small padding for neat spacing */
+}
 
-    .sidebar .brand img {
-      width: 80%;
-      height: auto;
-    }
-
+.sidebar .brand img {
+  width: 100%;   /* fill full sidebar width */
+  height: auto;  /* maintain aspect ratio */
+  max-height: 80px; /* or adjust to desired height */
+  object-fit: cover; /* crop neatly if needed */
+  display: block;
+}
     .sidebar a {
       color: #fff;
       display: flex;
