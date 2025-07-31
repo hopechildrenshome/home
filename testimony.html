@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>News</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: #f8f9fa;
+    }
+
+    .sidebar {
+      background-color: #0d6efd;
+      color: #fff;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      padding-top: 20px;
+    }
+
+    .sidebar .brand {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .sidebar .brand img {
+      width: 80%;
+      height: auto;
+    }
+
+    .sidebar a {
+      color: #fff;
+      display: flex;
+      align-items: center;
+      padding: 12px 20px;
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+
+    .sidebar a:hover {
+      background-color: #f39c12;
+      color: #fff;
+    }
+
+    .sidebar a i {
+      margin-right: 10px;
+    }
+
+    .content {
+      margin-left: 260px;
+      padding: 40px 20px;
+    }
+
+    /* Hide the fixed sidebar on small screens */
+    @media (max-width: 767.98px) {
+      .sidebar-fixed {
+        display: none;
+      }
+      .content {
+        margin-left: 0;
+      }
+    }
+
+    footer {
+      background-color: #2c3e50;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+    .section-title {
+      font-weight: bold;
+      margin-bottom: 20px;
+      color: #0d6efd;
+    }
+
+    /* News Cards Styling */
+    .news-card {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+      overflow: hidden;
+      margin-bottom: 2rem;
+    }
+
+    .news-img {
+      width: 100%;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+
+    .news-title {
+      font-weight: bold;
+      color: #0d6efd;
+      font-size: 1.4rem;
+      margin-bottom: 0.8rem;
+    }
+
+    .news-text {
+      font-size: 1rem;
+      color: #333;
+      line-height: 1.7;
+    }
+
+    .news-content {
+      padding: 20px;
+    }
+
+    @media (max-width: 767.98px) {
+      .news-img {
+        margin-bottom: 15px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Toggle button for mobile -->
+  <button class="btn btn-primary d-md-none m-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSidebar">
+    <i class="bi bi-list"></i> Menu
+  </button>
+
+  <!-- Fixed sidebar for large screens -->
+   <nav class="sidebar sidebar-fixed d-none d-md-flex flex-column position-fixed" style="width: 250px; height: 100vh;">
+    <a href="index.html"><i class="bi bi-house-door"></i> Home</a>
+    <a href="about.html"><i class="bi bi-info-circle"></i> About Us</a>
+    <a href="mission.html"><i class="bi bi-bullseye"></i> Our Mission</a>
+    <a href="facility.html"><i class="bi bi-building"></i> Facilities</a>
+    <a href="gallery.html"><i class="bi bi-image"></i> Gallery</a>
+    <a href="testimony.html"><i class="bi bi-image"></i> Testimonials</a>
+    <a href="activity.html"><i class="bi bi-activity"></i> Activities</a>
+    <a href="news.html"><i class="bi bi-newspaper"></i> News</a>
+    <a href="contact.html"><i class="bi bi-envelope"></i> Contact</a>
+  </nav>
+
+  <!-- Offcanvas sidebar for small screens -->
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasSidebar">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title">Menu</h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body sidebar">
+      <a href="index.html"><i class="bi bi-house-door"></i> Home</a>
+      <a href="about.html"><i class="bi bi-info-circle"></i> About Us</a>
+      <a href="mission.html"><i class="bi bi-bullseye"></i> Our Mission</a>
+      <a href="facility.html"><i class="bi bi-building"></i> Facilities</a>
+      <a href="gallery.html"><i class="bi bi-image"></i> Gallery</a>
+      <a href="testimony.html"><i class="bi bi-image"></i> Testimonials</a>
+      <a href="activity.html"><i class="bi bi-activity"></i> Activities</a>
+      <a href="news.html"><i class="bi bi-newspaper"></i> News</a>
+      <a href="contact.html"><i class="bi bi-envelope"></i> Contact</a>
+    </div>
+  </div>
+
+  <main class="content">
+    <div class="container news-section">
+      <div class="mb-5 text-center">
+        <h2 class="section-title">Testmonials</h2>
+        <p class="lead">"Real Stories. Real Impact"</p>
+      </div>
+     <!-- 2nd News Card -->
+<!-- Nadesh Testimonial Card -->
+<!-- Compact Nadesh Testimonial Card -->
+<div class="news-card py-2 px-3">
+  <div class="row g-3 align-items-center">
+    <div class="col-md-5">
+      <img src="Nadesh.jpg" alt="Nadesh Kannaya Testimonial" class="img-fluid rounded shadow-sm" style="max-height: 300px; object-fit: cover; width: 100%;">
+    </div>
+    <div class="col-md-7">
+      <div class="news-title mb-2">🌟 A Journey of Hope – Nadesh Kannaya</div>
+      <div class="news-text small" style="max-height: 400px; overflow-y: auto; line-height: 1.4;">
+        <p><strong>Hello everyone,</strong></p>
+        <p>My name is <strong>Nadesh Kannaya</strong>, and I feel truly blessed to share my story with you today. In 1992, I was lovingly welcomed into <strong>Prathyasha Bal Bhawan</strong> along with my siblings, coming from a humble background.</p>
+
+        <p>From the very first day, this place became more than a shelter — it became my true home, filled with love and warmth where I grew in <em>heart, faith, and hope</em>.</p>
+
+        <blockquote class="bible-verse">"Give thanks to the Lord, for He is good; His love endures forever." – <em>Psalm 107:1</em></blockquote>
+
+        <p>Every meal, prayer, lesson, and act of care shaped me. I am especially grateful to <strong>Uncle John</strong> and <strong>Aunty Deepa</strong>, who raised us with love and discipline for nearly two decades.</p>
+
+        <p>Thanks to them, I studied at <strong>Grace Academy</strong> from nursery to Grade 12 — a journey that was once unimaginable.</p>
+
+        <p>Today, as a <strong>teacher</strong>, I stand here confident, educated, and grounded in faith, because of this nurturing home.</p>
+
+        <blockquote class="bible-verse">“Train up a child in the way he should go; even when he is old he will not depart from it.” – <em>Proverbs 22:6</em></blockquote>
+
+        <blockquote class="bible-verse">“I will give thanks to You, Lord, with all my heart; I will tell of all Your wonderful deeds.” – <em>Psalm 9:1</em></blockquote>
+
+        <p><strong>Thank you, Prathyasha Bal Bhawan.</strong><br>You are a gift from God. I will forever be grateful.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+      <!-- 2nd News Card -->
+<!-- Lakshmi Naidu Testimonial Card -->
+<!-- Lakshmi Naidu Testimonial Card (Image on Right) -->
+<div class="news-card py-2 px-3">
+  <div class="row g-3 align-items-center">
+    <!-- Text Content on the Left -->
+    <div class="col-md-7">
+      <div class="news-title mb-2">🌟 From Rags to Rugs – Lakshmi Naidu</div>
+      <div class="news-text small" style="line-height: 1.5;">
+        <p><strong>I'm LAKSHMI NAIDU.</strong> <em>From Rags to Rugs!!</em> Sounds like a long journey, doesn’t it?</p>
+
+        <p>I still remember the very first day I stepped into the Home — a shriveled, feeble girl, feeling unnoticed and unloved.</p>
+
+        <p>But today, when I look back, I still wonder to myself — <em>Am I the same Lakshmi?</em> It's hard to believe and even harder for others to believe and digest this truth — that I am now a reputed <strong>Physiotherapist</strong>.</p>
+
+        <p>I truly believe it is only because of the <strong>faithfulness of an unchanging God</strong>.</p>
+
+        <p>I thank <strong>Uncle John and Aunty Deepa</strong> from the bottom of my heart for their consistent love for me and for helping me reach this far.</p>
+
+        <p class="mt-3"><em>With thanksgiving,</em><br><strong>Lakshmi Naidu</strong><br><span class="text-muted">Physiotherapist</span></p>
+      </div>
+    </div>
+
+    <!-- Image on the Right -->
+    <div class="col-md-5">
+      <img src="LakshmiNaidu.jpg" alt="Lakshmi Naidu Testimonial" class="img-fluid rounded shadow-sm" style="max-height: 300px; object-fit: cover; width: 100%;">
+    </div>
+  </div>
+</div>
+
+
+
+ 
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Hope for Children Society. All rights reserved.</p>
+  </footer>
+
+  <!-- Bootstrap Bundle with Popper.js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
