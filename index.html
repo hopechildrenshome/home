@@ -30,34 +30,34 @@
     }
 
     .sidebar .brand img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-.bg-image-column {
-  background: url("home_image.jpg") no-repeat center center;
-  background-size: cover;   /* make image cover the column */
-  border-radius: 12px;      /* keep rounded corners */
-  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-  min-height: 350px;        /* same height as your old image */
-}
-.sidebar .brand h4 {
-  font-weight: 700;
-  font-size: 1rem;
-  text-align: center;
-  color: #fff;
-  line-height: 1.2;
-  word-wrap: break-word;
-}
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
 
+    /* Background image column */
+    .bg-image-column {
+      background: url("home_image.jpg") no-repeat center center;
+      background-size: cover;   /* make image cover the column */
+      border-radius: 12px;      /* keep rounded corners */
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+      min-height: 350px;        /* same height as your old image */
+    }
 
+    .sidebar .brand h4 {
+      font-weight: 700;
+      font-size: 1rem;
+      text-align: center;
+      color: #fff;
+      line-height: 1.2;
+      word-wrap: break-word;
+    }
 
     .sidebar .brand {
       text-align: center;
       margin-bottom: 2rem;
     }
 
- 
     .sidebar h4 {
       font-weight: 700;
       text-transform: uppercase;
@@ -126,11 +126,6 @@
     .btn-primary:hover {
       background: #0b5ed7;
     }
-
-    img.hero-banner {
-      border-radius: 10px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    }
   </style>
 </head>
 
@@ -173,29 +168,23 @@
     </div>
   </div>
 
-<main class="content">
-  <div class="container my-5">
-    <div class="row align-items-center">
-      <!-- Text content -->
-      <div class="col-md-6">
-        <h1 class="mb-3 text-primary">Welcome to Prathyasa Bal Bhawan(Hope children's Home)</h1>
-        <p class="lead">
-          A home where love, care, and the purpose of living are taught. 
-        </p>
-        <a href="about.html" class="btn btn-primary mt-3">Learn More About Us</a>
+  <main class="content">
+    <div class="container my-5">
+      <div class="row align-items-center">
+        <!-- Text content -->
+        <div class="col-md-6">
+          <h1 class="mb-3 text-primary">Welcome to Prathyasa Bal Bhawan (Hope Children's Home)</h1>
+          <p class="lead">
+            A home where love, care, and the purpose of living are taught. 
+          </p>
+          <a href="about.html" class="btn btn-primary mt-3">Learn More About Us</a>
+        </div>
+
+        <!-- Background Image Column -->
+        <div class="col-md-6 bg-image-column"></div>
       </div>
-
-<!--       <!-- Image content -->
-      <div class="col-md-6 text-center">
-        <img src="home_image.jpg" alt="Children at Prathyasa" class="img-fluid rounded-4 shadow-lg" style="max-height: 350px; object-fit: cover;">
-      </div> -->
-      <!-- Image content -->
-<div class="col-md-6 text-center bg-image-column"></div>
-
     </div>
-  </div>
-</main>
-
+  </main>
 
   <footer>
     <p>&copy; 2025 Hope for Children Society. All rights reserved.</p>
@@ -206,8 +195,3 @@
 
 </body>
 </html>
-
-
-
-
-
