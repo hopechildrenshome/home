@@ -75,7 +75,6 @@
     }
 
     .gallery-section {
-      position: relative;
       margin-top: 20px;
     }
 
@@ -93,6 +92,7 @@
       transform: scale(1.02);
     }
 
+    /* Arrows - fixed inside container */
     .scroll-arrow {
       position: absolute;
       top: 50%;
@@ -105,7 +105,7 @@
       height: 50px;
       font-size: 24px;
       cursor: pointer;
-      z-index: 2;
+      z-index: 10; /* ensures arrows are above image */
     }
     .scroll-arrow.left {
       left: 10px;
@@ -194,9 +194,12 @@
         <h2 class="section-title">Photo Gallery</h2>
       </div>
 
-      <button class="scroll-arrow left" id="arrow-left">&#10094;</button>
-      <img id="current-image" src="img1.jpg" alt="Gallery Image" class="gallery-img img-fluid">
-      <button class="scroll-arrow right" id="arrow-right">&#10095;</button>
+      <!-- Wrap arrows + image inside relative container -->
+      <div class="position-relative d-inline-block">
+        <button class="scroll-arrow left" id="arrow-left">&#10094;</button>
+        <img id="current-image" src="img1.jpg" alt="Gallery Image" class="gallery-img img-fluid">
+        <button class="scroll-arrow right" id="arrow-right">&#10095;</button>
+      </div>
     </div>
   </div>
 
@@ -216,7 +219,7 @@
       'img2.jpg',
       'img3.jpg',
       'img4.jpg',
-      'breakfast_before_school.jpg', // better without spaces
+      'breakfast_before_school.jpg', // no spaces in file names
       'school.jpg'
     ];
 
